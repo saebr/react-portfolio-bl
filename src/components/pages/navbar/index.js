@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./style.css";
 
 function Navbar(props) {
@@ -17,13 +18,13 @@ function Navbar(props) {
             </div>
             <ul className="navbar-nav">
             <li className="nav-item">
-            <a className="nav-link" href="#aboutme">About Me <span className="sr-only">(current)</span></a>
+            <a className="nav-link"><Link to="/">About Me </Link><span className="sr-only">(current)</span></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#project">Projects</a>
+            <a className="nav-link"><Link to="/projects">Projects</Link></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#contact-me">Contact Me</a>
+            <a className="nav-link"><Link to="/contact">Contact Me</Link></a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="https://drive.google.com/file/d/1mf0OGuVPgixLK5RxdQ-Dj7qS1lkroiQi/view?usp=sharing" target= "_blank">Resume</a>
